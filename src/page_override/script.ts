@@ -6,7 +6,7 @@ const cryptoChromeExtension = {
     initCrypto: undefined
 };
 
-cryptoChromeExtension.objectToArray = (thisObject): object => {
+cryptoChromeExtension.objectToArray = (thisObject: object): string[] => {
     return Object.keys(thisObject).map((k) => {
         return thisObject[k];
     });
